@@ -14,6 +14,8 @@ function toggleRenderAiMarkers_drawCallback()
     local x2, y2, z2 = getWorldTranslation(dimNode2);
     drawDebugTriangle(x, y, z, x, y, z2, x1, y, z1, r, g, b, a, false);
     drawDebugTriangle(x1, y, z2, x1, y, z1, x, y, z2, r, g, b, a, false);
+    drawDebugTriangle(x, y, z2, x, y, z, x1, y, z1, r, g, b, a, false);
+    drawDebugTriangle(x1, y, z1, x1, y, z2, x, y, z2, r, g, b, a, false);
 end
 
 if g_renderAiMarkersDrawCallback ~= nil then
